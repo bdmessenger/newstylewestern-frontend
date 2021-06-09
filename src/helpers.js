@@ -1,4 +1,4 @@
-const API = 'http://localhost:8080'
+const API = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080'
 
 export async function fetchFromAPI(endpoint, opts) {
     const { method, body } = { method: 'POST', body: null, ...opts }
