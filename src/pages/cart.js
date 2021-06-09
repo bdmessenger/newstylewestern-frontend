@@ -50,7 +50,16 @@ const CartPage = ({history: {push}}) => {
                   <Text>{item.title} - {item.color.name} / {item.size}</Text>
                 </Flex>
                 <Text>Price: ${item.price.toFixed(2)}</Text>
-                <Text>Quantity: {item.quantity}</Text>
+                <Box>
+                  <Text>Quantity:</Text>
+                  <Flex alignItems="center">
+                  <Button px={5} onClick={() => decrease(item)}>-</Button>
+                  <Spacer/>
+                  {item.quantity}
+                  <Spacer/>
+                  <Button px={5} onClick={() => increase(item)}>+</Button>
+                  </Flex>
+                </Box>
                 <Text>Total Amount: ${(item.quantity * item.price).toFixed(2)}</Text>
                 <Button onClick={() => removeProduct(item)} colorScheme="red" width="100%">
                   <Icon as={FaTrash} />
