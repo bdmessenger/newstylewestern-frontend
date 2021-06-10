@@ -3,9 +3,30 @@
 The frontend for my fake eCommerce store, New Style Western.
 DEMO: [click here](https://newstylewestern-frontend.vercel.app/)
 
-Requires this repository (backend) to make the checkout process to work.
-[https://github.com/bdmessenger/newstylewestern-backend](https://github.com/bdmessenger/newstylewestern-backend)
+## Requirements
 
+Needs a Stripe's publishable key and secret key to fully get the app functional. To obtain them, you need to register an account at [https://stripe.com/](https://stripe.com/), and then once registered, they'll be available on your account's dashboard.
+
+Requires this repository (backend) to make the checkout process to work. [https://github.com/bdmessenger/newstylewestern-backend](https://github.com/bdmessenger/newstylewestern-backend)
+
+For user authentication to function, it requires a [Firebase app](https://firebase.google.com/).
+
+### .env
+```
+// BACKEND
+REACT_APP_BACKEND_URL={INSERT YOUR BACKEND URL ex: http://localhost:8080}
+
+// STRIPE
+REACT_APP_PUBLISHABLE_KEY={INSERT STRIPE PUBLISHABLE KEY}
+
+// FIREBASE
+REACT_APP_API_KEY={INSERT FIREBASE PROJECT API KEY}
+REACT_APP_AUTH_DOMAIN={INSERT FIREBASE PROJECT AUTH DOMAIN}
+REACT_APP_PROJECT_ID={INSERT FIREBASE PROJECT ID}
+REACT_APP_STORAGE_BUCKET={INSERT FIREBASE PROJECT STORAGE BUCKET}
+REACT_APP_SENDER_ID={INSERT FIREBASE PROJECT SENDER ID}
+REACT_APP_FIREBASE_APP_ID={INSERT FIREBASE APP ID}
+```
 
 # Getting Started with Create React App
 
