@@ -1,3 +1,12 @@
+# New Style Western (Frontend)
+
+The frontend for my fake eCommerce store, New Style Western.
+DEMO: [click here](https://newstylewestern-frontend.vercel.app/)
+
+Requires this repository (backend) to make the checkout process to work.
+[https://github.com/bdmessenger/newstylewestern-backend](https://github.com/bdmessenger/newstylewestern-backend)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
