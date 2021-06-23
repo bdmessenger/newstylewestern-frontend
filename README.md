@@ -1,7 +1,7 @@
 # New Style Western (Frontend)
 
 The frontend for my fake eCommerce store, New Style Western.
-DEMO: [click here](https://newstylewestern-frontend.vercel.app/)
+DEMO: [click here](https://newstylewestern.vercel.app/)
 
 ## Requirements
 
